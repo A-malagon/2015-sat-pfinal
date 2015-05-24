@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block titulo%} {{titulo|safe}}{%endblock%}
+
+{% block descripcion%} Breve Descripcion: {%endblock%}
+
+{% block comentario%} {{comentario|safe}}
+                      "<br/>"
+                      "<br/>"{%endblock%}
+
+{% block contenido%} {{mensaje|safe}}
+                     <a href={{admin|safe}}>{{logger|safe}}</a>
+                     {{Espacio|safe}}
+					 {{lista|safe}} {%endblock%}

@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block titulo%} Todas las Actividades {%endblock%}
+
+{% block contenido%} {{mensaje|safe}}
+                     <a href={{admin|safe}}>{{logger|safe}}</a>
+                     {{Espacio|safe}}
+                     {{form|safe}}
+                     {{fecha|safe}}
+                     {{num|safe}}
+					 {{lista|safe}} {%endblock%}

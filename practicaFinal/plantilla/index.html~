@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+    <head>
+        <title>Ayuntamiento</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+
+    <body>
+
+        <table width="80%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+                <td class="main_heading" colspan="6">
+                    <img src="css/madrid.jpg" id="foto_madrid"></img>
+                    <font class="main_heading">
+                        Comunidad de Madrid
+                    </font>
+
+                    <br />
+                    <font class="sub_heading">
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td class="main_link">
+                    <font class="link">
+                        <a href="/">Inicio</a>
+                    </font>
+                </td>
+                <td class="main_link">
+                    <font class="link">
+                        <a href="/todas">Todas las actividades</a>
+                    </font>
+                </td>
+                <td class="main_link">
+                    <font class="link">
+                        <a href="/usuario">Ir a Pagina Personal</a>
+                    </font>
+                </td>
+                <td class="main_link">
+                    <font class="link">
+                        <a href="/usuario/rss">RSS usuario</a>
+                    </font>
+                </td>
+                <td class="main_link">
+                    <font class="link">
+                        <a href="/maquina">Ayuda</a>
+                    </font>
+                </td>
+                <td class="main_space">
+                </td>
+            </tr>
+            <tr>
+                <td class="content" colspan="6">
+                    <font class="content">
+						<h1>{% block titulo%}{%endblock%}</h1>
+                        <h3>{% block descripcion%}{%endblock%}</h3>
+                        <i><b>{% block comentario%}{%endblock%}</b></i>
+						{% block contenido%}{%endblock%}
+                       
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td class="copyright" colspan="6">
+                    <font class="copyright">
+                        &copy; 2015 Alejandro Malagon
+                    </font>
+                </td>
+            </tr>
+        </table>
+
+    </body>
+</html>

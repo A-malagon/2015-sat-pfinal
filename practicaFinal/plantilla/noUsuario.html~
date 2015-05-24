@@ -1,0 +1,7 @@
+{% extends 'index.html' %}
+
+{% block titulo%} Error {%endblock%}
+
+{% block contenido%}{{mensaje|safe}}
+                     <a href={{admin|safe}}>{{logger|safe}}</a>
+                     Usuario o contraseña incorrectos {%endblock%}

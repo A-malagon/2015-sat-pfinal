@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+
+{% block titulo%} AYUDA {%endblock%}
+
+{% block comentario%} La web permite recoger actividades de la web del Ayuntamiento<br/>
+                      de Madrid,las cuales almacena en una base de datos, y mediante<br/>
+                      un boton de actualizar situado en /todas, permite actualizar las<br/>
+                      actividades. Hay un registro de usuarios, que permite a cada usuario <br/>
+                      guardar sus actividades seleccionadas en su pagina principal.<br/><br/>
+                      En el recurso /, aparecen las 10 actividades mas cercanas en<br/>
+                      fecha y un listado de usuarios registrados en la aplicacion,con un enlace<br/>
+                      pinchable, se puede acceder tanto a las paginas de usuarios, como a las<br/>
+                      paginas RSS de cada uno.<br/><br/>
+                      En el recurso /usuario, esta la pagina principal del usuario actualmente<br/>
+                      registrado, al cual tb se puede acceder con un pinchable, en el menu principal,<br/>
+                      se podra cambiar el titulo, y una breve descripcion de la propia pagina,<br/>
+                      cada usuario solo puede personalizar la suya, y ver las de los demas.<br/><br/>
+                      En el recurso /todas, habra un boton para actualizar actividades,un<br/>
+                      formulario para filtrar las actividades por varios campos, y todas las<br/>
+                      actividades con un boton de guardar actividad, para que un usuario registrado<br/>
+                      pueda seleccionar una actividad apra su pagina personal, si no has iniciado<br/>
+                      sesion ese boton desaparece, y solo pueden ser actividades observables.<br/>
+                      
+                      <br/>
+                      <br/>{%endblock%}
+
+{% block contenido%} {{lista|safe}}
+                     <br/>
+                     <br/>   
+                     {{mensaje|safe}}
+                     <a href={{admin|safe}}>{{logger|safe}}</a> {%endblock%}

@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+
+{% block titulo%} {{titulo|safe}} {%endblock%}
+
+{% block contenido%} {{mensaje|safe}}
+                     <a href={{admin|safe}}>{{logger|safe}}</a>
+                     {{Espacio|safe}}
+					 {{lista|safe}} {%endblock%}

@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block titulo%} Pagina Principal de Eventos {%endblock%}
+
+
+
+{% block contenido%} {{mensaje|safe}}
+                     <a href={{admin|safe}}>{{logger|safe}}</a>
+	                 {{lista|safe}}
+                     {{enlaces|safe}} {%endblock%}
